@@ -1,0 +1,10 @@
+{
+  "name": "TwitterBotService",
+  "description": "Service for TwitterBot database.",
+  "author": "Felix Milea-Ciobanu",
+  "dependencies": {
+    "custom-logger": ">= 0.2.1",
+		"express": ">= 4.7.1",
+		"mongodb": ">= 1.4.7"
+  }
+}
