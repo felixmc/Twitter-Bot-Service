@@ -6,7 +6,7 @@ exports.init = function(config, log) {
 		connect: function(callback) {
 			mongo.connect(mongoHost, function(err, db) {
 				if (err) { log.error(err); }
-				else { callback(db)); }
+				else { callback(db); }
 			});
 		}
 	}

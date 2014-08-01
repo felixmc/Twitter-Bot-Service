@@ -17,8 +17,7 @@ router.use(function(req, res, next) {
 	next();
 });
 
-app.use("/api", service.init(router));
+app.use("/api", service.init(router, config, log));
 
 app.listen(config.service_port);
 log.info("TwitterBot Service started on port " + config.service_port);
-

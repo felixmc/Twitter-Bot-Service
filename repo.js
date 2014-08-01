@@ -1,15 +1,4 @@
 exports.init = function(config, log) {
-	var mongo = require("mongodb").MongoClient;
-	var mongoHost = "mongodb://" + config.database_host + ":27017/" + config.database_name;
-
-	log.info("mongo module init");
-
-	var connect = function(col, callback) {
-		mongo.connect(mongoHost, function(err, db) {
-			if (err) { log.error(err); }
-			else { callback(db, db.collection(col)); }
-		});
-	};
 
 	return {
 		arrayIntersectQuery: function(prop, vals) {
