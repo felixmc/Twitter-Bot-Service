@@ -1,7 +1,8 @@
 exports.init = function(router, config, log) {
-	var status = require("./resources/status.js").init(config, log);
-	//var post = require("./resources/post.js").init(config, log);
-	//var poster = require("./resources/poster.js").init(config, log);
+	var model  = require("./model")(config, log);
+	var status = require("./resources/status.js")(model);
+	//var post = require("./resources/post.js")(model);
+	//var poster = require("./resources/poster.js")(model);
 
 	router.get("/", function(req, res) {
 		res.json({ message: "Welcome to TwitterBot Service v0.1" });
@@ -16,4 +17,4 @@ exports.init = function(router, config, log) {
 	//router.get("/posts/:id", post.findById);
 
 	return router;
-}
+

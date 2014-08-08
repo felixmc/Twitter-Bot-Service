@@ -3,9 +3,8 @@
   "description": "Service for TwitterBot database.",
   "author": "Felix Milea-Ciobanu",
   "dependencies": {
-		"custom-logger": ">= 0.2.1",
-		"express": ">= 4.7.1",
-		"body-parser": ">= 1.5.2",
-		"mongodb": ">= 1.4.7"
+		"custom-logger": ">= 0.3.0",
+		"mango-rest": ">= 0.1.0",
+		"express": ">= 4.7.1"
   }
 }
