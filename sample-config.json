@@ -1,4 +1,10 @@
 {
-	"database_host": "localhost",
-	"database_name": "twitterbot"
+	"service_port": "3322",
+	"host": "localhost",
+	"database": "twitterbot",
+	"models": [
+		{ "name": "status" },
+		{ "name": "post" },
+		{ "name": "poster" }
+	]
 }

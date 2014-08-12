@@ -1,9 +1,7 @@
-var config = require("./config.json");
-var log    = require("custom-logger").config({ level: 0 });
-
+var config     = require("./config.json");
+var log        = require("custom-logger").config({ level: 0 });
 var express    = require("express");
 var app        = express();
-
 var mongoRest  = require("mango-rest").init(config);
 
 // log all requests
