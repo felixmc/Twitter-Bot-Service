@@ -1,10 +1,9 @@
 {
-	"service_port": "3322",
-	"host": "localhost",
-	"database": "twitterbot",
-	"models": [
-		{ "name": "status" },
-		{ "name": "post" },
-		{ "name": "poster" }
-	]
+	"service": {
+		"port": 3322	
+	},
+	"mongo": {
+		"host": "localhost",
+		"database": "twitterbot"
+	}
 }

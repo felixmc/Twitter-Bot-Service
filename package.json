@@ -1,7 +1,6 @@
 {
   "name": "TwitterBotService",
-  "description": "Service for TwitterBot database.",
-  "author": "Felix Milea-Ciobanu",
+  "description": "Service for TwitterBot system",
   "dependencies": {
 		"custom-logger": ">= 0.3.0",
 		"mango-rest": ">= 0.1.0",

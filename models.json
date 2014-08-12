@@ -1,0 +1,5 @@
+[
+	{ "name": "status", "model": "./models/status.js", "handler": "./handlers/status.js" },
+	{ "name": "post" },
+	{ "name": "poster" }
+]
